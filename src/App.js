@@ -11,7 +11,7 @@ function App() {
     <FormContext.Provider
       value={{ activeStepIndex, setActiveStepIndex, formData, setFormData }}
     >
-      <div className="w-screen h-screen flex flex-col items-center justify-start">
+      <div className=" bg-cyan-800 text-cyan-50 w-screen h-screen flex flex-col items-center justify-start">
         <Stepper />
         <Step />
       </div>

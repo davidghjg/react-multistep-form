@@ -24,11 +24,11 @@ function Basic() {
     useContext(FormContext);
 
   const renderError = (message) => (
-    <p className="italic text-red-600">{message}</p>
+    <p className=" text-red-600">{message}</p>
   );
 
   const ValidationSchema = yup.object().shape({
-    name: yup.string().required(),
+    usuario: yup.string().required(),
     email: yup.string().email().required(),
   });
 
@@ -46,7 +46,7 @@ function Basic() {
 
         <Formik
       initialValues={{
-        name: "",
+        usuario: "",
         email: "",
       }}
       validationSchema={ValidationSchema}
@@ -57,18 +57,17 @@ function Basic() {
       }}
     >
       <Form className="flex flex-col justify-center items-center">
-        <div className="flex flex-col items-start mb-2">
-          <label className="font-medium text-gray-900">Name</label>
+        <div className="flex flex-col items-start py mb-2">
+          <label className="font-medium text-gray-900">Usuario</label>
+          <ErrorMessage name="usuario" render={renderError} />
           <Field
             name="name"
-            className="rounded-md border-2 p-2"
-            placeholder="John Doe"
+            className="rounded-md border-2 p-2 px-10 "
+            placeholder="Ingresa tu usuario"
           />
         </div>
-        <ErrorMessage name="name" render={renderError} />
         <button
-          className=" bg-blue-500 rounded-lg font-medium text-white my-2 p-4"
-          //bg-blueshover dark:bg-blues rounded-lg text-white p-4
+          className=" bg-blue-500 rounded-lg font-bold text-white py-2 my-2 p-5"
           type="submit"
         >
           Continue
