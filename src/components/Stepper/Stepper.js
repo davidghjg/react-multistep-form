@@ -26,6 +26,10 @@ function Stepper() {
       <div className="stepper-item  font-bold flex items-center justify-center w-8 h-8 border-2 rounded-full shrink-0">
         3
       </div>
+      <div className="flex-auto border-t-2"></div>
+      <div className="stepper-item  font-bold flex items-center justify-center w-8 h-8 border-2 rounded-full shrink-0">
+        4
+      </div>
     </div>
   );
 }

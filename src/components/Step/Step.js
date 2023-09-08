@@ -1,6 +1,6 @@
 import React, { useContext } from "react";
 import { FormContext } from "../../App";
-import { Basic, Success, Workspace } from "../Forms";
+import { Basic, Success, Forma } from "../Forms";
 
 function Step() {
   const { activeStepIndex } = useContext(FormContext);
@@ -10,11 +10,12 @@ function Step() {
       stepContent = <Basic />;
       break;
     case 1:
-      stepContent = <Workspace />;
+      stepContent = <Forma />;
       break;
     case 2:
       stepContent = <Success />;
       break;
+
     default:
       break;
   }

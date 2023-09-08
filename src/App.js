@@ -1,6 +1,7 @@
 import { createContext, useState } from "react";
 import Step from "./components/Step/Step";
 import Stepper from "./components/Stepper";
+import { Forma } from "./components/Forms";
 export const FormContext = createContext();
 
 function App() {

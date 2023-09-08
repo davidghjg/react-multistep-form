@@ -1,5 +1,5 @@
 import Basic from "./Basic";
-import Workspace from "./Workspace";
+import Forma from "./Forma";
 import Success from "./Success";
 
-export { Basic, Workspace, Success };
+export { Basic, Forma, Success };
